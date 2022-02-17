@@ -14,4 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "GetLocation"
 include ':Location'
-include ':app'

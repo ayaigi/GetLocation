@@ -97,8 +97,7 @@ class GetLocation(context: Context, private val locationListener: LocationListen
     }
 
     private fun isLocationEnabled(context: Context): Boolean {
-
-        var locationManager: LocationManager =
+        val locationManager: LocationManager =
             (context as Activity).getSystemService(Context.LOCATION_SERVICE) as LocationManager
         return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || locationManager.isProviderEnabled(
             LocationManager.NETWORK_PROVIDER
